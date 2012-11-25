@@ -1,0 +1,15 @@
+{
+  "name": "github-npm",
+  "manifest_version": 2,
+  "description": "Teach github about npm",
+  "version": "0.1",
+  "content_scripts": [
+		{
+      "matches": ["https://github.com/*/*"],
+      "js": ["js/background.js"]
+    }
+  ],
+  "permissions": [
+    "https://registry.npmjs.org/"
+  ]
+}
